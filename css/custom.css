@@ -16,13 +16,13 @@
   --color-link-bg: #fffae2;
   --color-link-hover: #ffffff; /* used */
   --color-link-active: #ffffff; /* used */
-  --border-radius-links: 20px;
+  --border-radius-links: 37px;
 
   /* Headlines og rubrik */
   --font-h1-size: 3rem;
   --font-sub1-size: 3rem;
-  --font-h2-size: 1.25rem;
-  --font-h3-size: 1.2rem;
+  --font-h2-size: 2.25rem;
+  --font-h3-size: 2.25rem;
   --color-headline-bg: #000;
   --color-headline-text-page: #fffae2;
 
@@ -31,10 +31,10 @@
   --color-text-inverted: #fffae2;
 
   /*  Marginer */
-  --margin-head-bottom: 5px;
+  --margin-head-bottom: 40px;
 
   /* Borders */
-  --border-radius: 20px;
+  --border-radius: 37px;
 
   /* Cards */
   --color-card-bg: #ffff;
@@ -56,7 +56,7 @@
   --logotype-size: 1rem;
   --headline1-size: 2rem;
   --headline2-size: 2.25rem;
-  --headline3-size: 1rem;
+  --headline3-size: 2rem;
   --bodytext-size: 1rem;
   --cta-text-size: 1rem;
   --followup-text-size: 1rem;
