@@ -60,6 +60,8 @@ footer ul {
   gap: 0;
 }
 
+/* LAYOUT FOR BUTTONS */
+
 @media (width > 600px) {
   #frontpage > main {
     grid-template-columns: 6fr 3fr;
