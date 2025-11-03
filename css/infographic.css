@@ -47,14 +47,29 @@
 
 #sund,
 #vaegt,
-#tsunami {
+#tsunami,
+.info-box {
   opacity: 0;
   transition: opacity 1s ease;
   display: none;
 }
 #sund.visible,
 #vaegt.visible,
-#tsunami.visible {
+#tsunami.visible,
+.info-text {
   display: block; /* Make it invisible, but still in layout */
   opacity: 1;
 }
+
+/* .rotate {
+  animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+} */
