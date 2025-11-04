@@ -34,21 +34,44 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>ZOO INDBERETNING</h1>
       <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+        <form id="webform">
+          <fieldset>
+            <legend>
+              <h3>Indberet din flodhest</h3>
+            </legend>
+
+            <select name="zoo" id="zoo_name">
+              <option value="">Vælg en zoo</option>
+              <option value="København">København zoo</option>
+              <option value="Odense">Odense zoo</option>
+              <option value="Knuthenborg">Knuthenborg safaripark</option>
+              <option value="Knuthenborg">Ree park</option>
+            </select>
+
+            <label for="weight">Vægt</label>
+            <input type="number" name="zoo" id="weight" />
+            <p>Error message</p>
+
+            <label for="age">Alder</label>
+            <input type="number" name="zoo" id="age" />
+            <p>Error message</p>
+
+            <label for="health">Sundhed</label>
+            <input type="range" name="zoo" id="health" />
+
+            <label for="message">Besked</label>
+            <textarea name="zoo" id="message"></textarea>
+            <label for="terms">Accept Terms</label>
+            <input type="checkbox" name="zoo" id="terms" />
+
+            <button>Submit</button>
+          </fieldset>
+        </form>
       </section>
     </main>
+
     <footer>
       <nav class="some">
         <ul>
