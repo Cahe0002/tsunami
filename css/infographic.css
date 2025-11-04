@@ -16,6 +16,7 @@
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 .info-text h3 {
   font-size: 0.8rem;
@@ -62,10 +63,10 @@
 }
 
 /* .rotate {
-  animation: rotate 1s linear;
-}
+  transform: scale(1);
+} */
 
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     rotate: 0deg;
   }
