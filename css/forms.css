@@ -1,4 +1,4 @@
-#webform {
+/* #webform {
   background-color: var(--form-background-color);
 }
 
@@ -29,4 +29,72 @@
   line-height: 1.3;
   margin: 0 0 1.2rem 0;
   padding: 0;
+} */
+
+/* CSS Starter er tilføjet, dine styles herunder */
+/* TIlføj styles til:
+   form (accent-color),
+   input (border, border-radius, padding, evt. box-shadow),
+   button (background-color, color, border, border-radius, padding, cursor)
+   .error-message (color) */
+
+form {
+  display: grid;
+  gap: 10px;
+  width: 800px;
+  margin: 0 auto;
+  accent-color: #8188a1;
+}
+
+option {
+  background-color: #e6e7ec;
+}
+
+label {
+  display: grid;
+  gap: 10px;
+  width: 600px;
+  margin: 0 auto;
+  font-family: "Orbitron", sans-serif;
+}
+
+input {
+  display: grid;
+  border: 2px solid #8188a1;
+  width: 600px;
+  padding: 10px 0px 10px 10px;
+  margin: 0 auto;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+button {
+  padding: 10px 200px 10px 200px;
+  background-color: #a61414;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+legend {
+  padding: 10px 10px 10px 10px;
+}
+
+fieldset {
+  border: 1.5px solid #8188a1;
+  padding: 10px 0px 10px 10px;
+}
+
+#zoo_name {
+  display: grid;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: #8188a1;
+  color: #e6e7ec;
+  border-radius: 0px;
+  font-family: "Orbitron", sans-serif;
+  padding: 10px 10px 10px 10px;
+}
+
+.error-message {
+  color: darkred;
 }
