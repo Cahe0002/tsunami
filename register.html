@@ -11,7 +11,16 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,11 +46,14 @@
       <h1>ZOO INDBERETNING</h1>
       <section id="form-section">
         <form id="webform">
+          <legend>
+            <h3>Indberet din flodhest</h3>
+          </legend>
+
           <fieldset>
             <legend>
-              <h3>Indberet din flodhest</h3>
+              <p>Vælg zoo</p>
             </legend>
-
             <select name="zoo" id="zoo_name">
               <option value="">Vælg en zoo</option>
               <option value="København">København zoo</option>
@@ -49,25 +61,33 @@
               <option value="Knuthenborg">Knuthenborg safaripark</option>
               <option value="Knuthenborg">Ree park</option>
             </select>
+          </fieldset>
 
-            <label for="weight">Vægt</label>
-            <input type="number" name="zoo" id="weight" />
+          <fieldset>
+            <legend>
+              <p>Oplysninger</p>
+            </legend>
+            <label for="weight">Navn på flodhest</label>
+            <input type="name" name="zoo" id="weight" />
             <p>Error message</p>
 
-            <label for="age">Alder</label>
+            <label for="age">Alder på flodhest</label>
             <input type="number" name="zoo" id="age" />
             <p>Error message</p>
 
             <label for="health">Sundhed</label>
             <input type="range" name="zoo" id="health" />
-
-            <label for="message">Besked</label>
-            <textarea name="zoo" id="message"></textarea>
-            <label for="terms">Accept Terms</label>
-            <input type="checkbox" name="zoo" id="terms" />
-
-            <button>Submit</button>
           </fieldset>
+
+          <label for="message">Besked</label>
+          <textarea name="zoo" id="message"></textarea>
+
+          <label for="terms">
+            <input type="checkbox" name="zoo" id="terms" />
+            Accept Terms</label
+          >
+
+          <button>Submit</button>
         </form>
       </section>
     </main>
