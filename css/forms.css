@@ -39,48 +39,79 @@
    .error-message (color) */
 
 form {
-  display: grid;
-  gap: 10px;
-  width: 800px;
-  margin: 0 auto;
   accent-color: #8188a1;
 }
 
 option {
-  background-color: #e6e7ec;
+  background-color: #ffffff;
 }
 
 label {
-  display: grid;
-  gap: 10px;
-  width: 600px;
+  width: 500px;
   margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-family: "Orbitron", sans-serif;
 }
 
 input {
   display: grid;
-  border: 2px solid #8188a1;
-  width: 600px;
+  border: 1px solid #8188a1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 500px;
   padding: 10px 0px 10px 10px;
   margin: 0 auto;
+  margin-bottom: 25px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  display: inline-block; /* allows it to stay inline with the label */
+  width: auto; /* don’t force full width */
+  margin: -0.1rem 0.1rem 0 0; /* space between checkbox and label */
+  vertical-align: middle; /* aligns with text nicely */
+  accent-color: #8188a1; /* optional: match your theme */
+}
+
+/* Optional: make label text inline with checkbox */
+.form-group label {
+  display: flex;
+  align-items: center; /* vertically aligns checkbox + text */
+}
+
+.error-message {
+  display: none;
+  width: 500px;
+  margin: 0 auto;
+  color: #a61414;
   font-family: "Alegreya Sans", sans-serif;
 }
 
 button {
+  display: grid;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto;
+  font-family: "Orbitron", sans-serif;
   padding: 10px 200px 10px 200px;
   background-color: #a61414;
   color: white;
   font-family: "Orbitron", sans-serif;
+  cursor: pointer;
 }
 
 legend {
   padding: 10px 10px 10px 10px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
 }
 
 fieldset {
   border: 1.5px solid #8188a1;
   padding: 10px 0px 10px 10px;
+  margin: 10px;
 }
 
 #zoo_name {
@@ -88,6 +119,7 @@ fieldset {
   gap: 10px;
   width: 500px;
   margin: 0 auto;
+  margin-bottom: 25px;
   background-color: #8188a1;
   color: #e6e7ec;
   border-radius: 0px;
@@ -95,6 +127,71 @@ fieldset {
   padding: 10px 10px 10px 10px;
 }
 
-.error-message {
-  color: darkred;
+#message {
+  display: grid;
+  border: 1px solid #8188a1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 500px;
+  padding: 10px 0px 10px 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+}
+
+#slider {
+  width: 500px;
+  height: max-content;
+
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+}
+
+#slider::-webkit-slider-runnable-track {
+  background-color: #8188a1;
+  height: 8px;
+}
+
+#slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  margin-top: -32px;
+  height: 40px;
+  width: 10px;
+  background-color: #a61414;
+}
+
+/* Focus-visible */
+
+:focus-visible {
+  outline: 1px solid #8188a1;
+  border-radius: 5px;
+}
+
+.form-group:has(:required) {
+  label::after {
+    content: "  *";
+    color: #8188a1;
+  }
+}
+
+.form-group:has(:user-invalid) {
+  input {
+    outline: 1px solid #c82a2a;
+    border-color: #a61414;
+  }
+  .error-message {
+    display: block;
+  }
+}
+
+.form-group:has(:user-valid) {
+  input {
+    outline: 1px solid #8188a1;
+    border-color: #e6e7ec;
+  }
 }
