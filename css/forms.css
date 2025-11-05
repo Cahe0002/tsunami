@@ -55,6 +55,7 @@ label {
   gap: 10px;
   width: 600px;
   margin: 0 auto;
+  margin-top: 10px;
   font-family: "Orbitron", sans-serif;
 }
 
@@ -64,6 +65,19 @@ input {
   width: 600px;
   padding: 10px 0px 10px 10px;
   margin: 0 auto;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+}
+
+#headline {
+  margin: 0 auto;
+}
+
+#error-message {
+  display: grid;
+  width: 600px;
+  margin: 0 auto;
+  color: #a61414;
   font-family: "Alegreya Sans", sans-serif;
 }
 
@@ -95,6 +109,12 @@ fieldset {
   padding: 10px 10px 10px 10px;
 }
 
-.error-message {
-  color: darkred;
+#message {
+  display: grid;
+  border: 2px solid #8188a1;
+  width: 600px;
+  padding: 10px 0px 10px 10px;
+  margin: 0 auto;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
 }
