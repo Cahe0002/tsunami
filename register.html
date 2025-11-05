@@ -44,12 +44,12 @@
 
     <main>
       <h1>ZOO INDBERETNING</h1>
-      <section id="form-section">
-        <form id="webform">
-          <legend>
-            <h3>Indberet din flodhest</h3>
-          </legend>
+      <form>
+        <legend>
+          <h3>Indberet din flodhest</h3>
+        </legend>
 
+        <div class="form-group">
           <fieldset>
             <legend>
               <p>Vælg zoo</p>
@@ -62,34 +62,63 @@
               <option value="Knuthenborg">Ree park</option>
             </select>
           </fieldset>
+        </div>
 
-          <fieldset>
-            <legend>
-              <p>Oplysninger</p>
-            </legend>
-            <label for="weight">Navn på flodhest</label>
-            <input type="name" name="zoo" id="weight" />
-            <p id="error-message">Please enter a value</p>
+        <fieldset>
+          <legend>
+            <p>Personlige oplysninger</p>
+          </legend>
+          <div class="form-group">
+            <label for="name">Navn på flodhest</label>
+            <input
+              type="name"
+              name="full-name"
+              id="name"
+              required
+              title="Please enter your name"
+            />
+            <p class="error-message">Please enter a value</p>
+          </div>
 
+          <div class="form-group">
             <label for="age">Alder på flodhest</label>
-            <input type="number" name="zoo" id="age" />
-            <p id="error-message">Please enter a value</p>
+            <input type="number" name="age" id="age" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
 
-            <label for="health">Usund</label>
-            <input type="range" name="zoo" id="health" />
-          </fieldset>
+          <div class="form-group">
+            <label for="age">Vægt på flodhest</label>
+            <input type="number" name="total-weight" id="weight" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+        </fieldset>
 
+        <fieldset>
+          <legend>Helbred</legend>
+          <div class="form-group">
+            <div class="health">
+              <label for="health">Usund</label>
+              <label for="health">Sund</label>
+            </div>
+            <input type="range" name="health" id="slider" required />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <p>Andet</p>
+          </legend>
           <label for="message">Besked</label>
-          <textarea name="zoo" id="message"></textarea>
+          <textarea name="message" id="message"></textarea>
+        </fieldset>
 
-          <label for="terms">
-            <input type="checkbox" name="zoo" id="terms" />
-            Accept Terms</label
-          >
+        <label for="terms">
+          <input type="checkbox" name="checkbox" id="terms" />
+          Accept Terms</label
+        >
 
-          <button>Submit</button>
-        </form>
-      </section>
+        <button>Submit</button>
+      </form>
     </main>
 
     <footer>
