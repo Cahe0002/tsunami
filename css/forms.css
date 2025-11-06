@@ -38,6 +38,23 @@
    button (background-color, color, border, border-radius, padding, cursor)
    .error-message (color) */
 
+#form-number {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.form-number {
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  width: 500px;
+}
+
 form {
   accent-color: #8188a1;
 }
@@ -73,12 +90,6 @@ input[type="checkbox"] {
   margin: -0.1rem 0.1rem 0 0; /* space between checkbox and label */
   vertical-align: middle; /* aligns with text nicely */
   accent-color: #8188a1; /* optional: match your theme */
-}
-
-/* Optional: make label text inline with checkbox */
-.form-group label {
-  display: flex;
-  align-items: center; /* vertically aligns checkbox + text */
 }
 
 .error-message {
@@ -165,6 +176,22 @@ fieldset {
   background-color: #a61414;
 }
 
+#upload {
+  appearance: none;
+  background-color: white;
+  -webkit-appearance: none;
+}
+
+#upload::-webkit-file-upload-button {
+  border: none;
+  background-color: #8188a1;
+  color: #ffffff;
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* Focus-visible */
 
 :focus-visible {
@@ -174,7 +201,7 @@ fieldset {
 
 .form-group:has(:required) {
   label::after {
-    content: "  *";
+    content: " *";
     color: #8188a1;
   }
 }
