@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,15 +79,15 @@
             />
             <p class="error-message">Please enter a value</p>
           </div>
-
           <div class="form-group">
-            <label for="age">Alder på flodhest</label>
+          <div class="form-number">
+            <label for="age">Alder på flodhest (år)</label>
+            <label for="age">Vægt på flodhest (kg)</label>
+          </div>
+          <div id="form-number">
             <input type="number" name="age" id="age" required />
             <p class="error-message">Please enter a value</p>
-          </div>
 
-          <div class="form-group">
-            <label for="age">Vægt på flodhest</label>
             <input type="number" name="total-weight" id="weight" required />
             <p class="error-message">Please enter a value</p>
           </div>
@@ -95,7 +95,7 @@
 
         <fieldset>
           <legend>Helbred</legend>
-          <div class="form-group">
+          <div class="form-health">
             <div class="health">
               <label for="health">Usund</label>
               <label for="health">Sund</label>
@@ -110,6 +110,12 @@
           </legend>
           <label for="message">Besked</label>
           <textarea name="message" id="message"></textarea>
+          <div class="form-group">
+            <div class="health">
+              <label for="upload">Tilføj billeder</label>
+            </div>
+            <input type="file" name="upload" id="upload" required />
+          </div>
         </fieldset>
 
         <label for="terms">
