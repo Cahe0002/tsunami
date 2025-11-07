@@ -70,7 +70,7 @@
               <input
                 type="text"
                 name="full-name"
-                id="name"
+                id="full-name"
                 required
                 title="Please enter your name"
               />
@@ -120,20 +120,22 @@
               <div class="upload">
                 <label for="upload">Tilføj billeder</label>
               </div>
-              <input
-                type="file"
-                name="upload"
-                id="upload"
-                value="yes"
-                required
-              />
+              <input type="file" name="upload" id="upload" value="yes" />
             </div>
           </fieldset>
 
-          <label for="terms">
-            <input type="checkbox" name="terms" id="terms" />
-            Accept Terms</label
-          >
+          <div class="form-group">
+            <label for="terms">
+              <input
+                type="checkbox"
+                name="accept_terms"
+                id="terms"
+                value="yes"
+                required
+              />
+              Accept Terms
+            </label>
+          </div>
           <button>Submit</button>
         </form>
       </section>
@@ -149,7 +151,7 @@
             <p>Navn på flodhest: <span id="name_output"></span></p>
             <p>Alder: <span id="age_output"></span></p>
             <p>Vægt: <span id="weight_output"></span></p>
-            <p>Helbred: <span id="health_output"></span></p>
+            <p>Besked: <span id="message_output"></span></p>
             <p>Terms accepted: <span id="terms_output"></span></p>
           </div>
         </fieldset>
