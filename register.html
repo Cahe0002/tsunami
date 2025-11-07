@@ -44,88 +44,135 @@
 
     <main>
       <h1>ZOO INDBERETNING</h1>
-      <form>
-        <legend>
-          <h3>Indberet din flodhest</h3>
-        </legend>
-
-        <div class="form-group">
+      <section id="form-section">
+        <article id="form-info">
+          <h2>Indberet jeres flodhest</h2>
+          <p>Info om jeres flodhest</p>
+        </article>
+        <form aria-label="Indberet flodhest">
           <fieldset>
-            <legend>
-              <p>Vælg zoo</p>
-            </legend>
-            <select name="zoo" id="zoo_name">
-              <option value="">Vælg en zoo</option>
-              <option value="København">København zoo</option>
-              <option value="Odense">Odense zoo</option>
-              <option value="Knuthenborg">Knuthenborg safaripark</option>
-              <option value="Knuthenborg">Ree park</option>
-            </select>
+            <legend>Vælg zoo</legend>
+            <div class="form-group">
+              <select name="zoo" id="zoo_name">
+                <option value="">Vælg en zoo</option>
+                <option value="København">København zoo</option>
+                <option value="Odense">Odense zoo</option>
+                <option value="Knuthenborg">Knuthenborg safaripark</option>
+                <option value="Reepark">Ree park</option>
+              </select>
+            </div>
           </fieldset>
-        </div>
 
-        <fieldset>
-          <legend>
-            <p>Personlige oplysninger</p>
-          </legend>
-          <div class="form-group">
-            <label for="name">Navn på flodhest</label>
-            <input
-              type="name"
-              name="full-name"
-              id="name"
-              required
-              title="Please enter your name"
-            />
-            <p class="error-message">Please enter a value</p>
-          </div>
-          <div class="form-group">
-            <div class="form-number">
-              <label for="age">Alder på flodhest (år)</label>
-              <label for="age">Vægt på flodhest (kg)</label>
-            </div>
-            <div id="form-number">
-              <input type="number" name="age" id="age" required />
-              <p class="error-message">Please enter a value</p>
-
-              <input type="number" name="total-weight" id="weight" required />
+          <fieldset>
+            <legend>Personlige oplysninger</legend>
+            <div class="form-group">
+              <label for="name">Navn på flodhest</label>
+              <input
+                aria-describedby="full-name-error"
+                type="text"
+                name="full-name"
+                id="full-name"
+                required
+                title="Please enter your name"
+              />
               <p class="error-message">Please enter a value</p>
             </div>
-          </div>
-        </fieldset>
+            <div class="form-group">
+              <div class="form-number">
+                <label for="age">Alder på flodhest (år)</label>
+                <label for="weight">Vægt på flodhest (kg)</label>
+              </div>
+              <div id="form-number">
+                <input
+                  type="number"
+                  name="age-number"
+                  id="age-number"
+                  aria-describedby="number-error"
+                  required
+                />
+                <p class="error-message">Please enter a value</p>
 
-        <fieldset>
-          <legend>Helbred</legend>
-          <div class="form-health">
-            <div class="health">
-              <label for="health">Usund</label>
-              <label for="health">Sund</label>
+                <input
+                  type="number"
+                  name="total-weight"
+                  id="total-weight"
+                  maxlength="2"
+                  aria-describedby="total-weight-error"
+                  required
+                />
+                <p class="error-message">Please enter a value</p>
+              </div>
             </div>
-            <input type="range" name="health" id="slider" required />
-          </div>
-        </fieldset>
+          </fieldset>
 
+          <fieldset>
+            <legend>Helbred</legend>
+            <div class="form-health">
+              <div class="health">
+                <span>Sund</span>
+                <span>Usund</span>
+              </div>
+              <input
+                type="range"
+                name="health"
+                id="slider"
+                aria-describedby="slider-error"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Andet</legend>
+            <label for="message">Besked</label>
+            <textarea name="message" id="message"></textarea>
+            <div class="form-group">
+              <div class="upload">
+                <label for="upload">Tilføj billeder</label>
+              </div>
+              <input
+                type="file"
+                name="upload"
+                id="upload"
+                value="yes"
+                aria-describedby="upload-error"
+              />
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="terms">
+              <input
+                type="checkbox"
+                name="accept_terms"
+                id="terms"
+                value="yes"
+                aria-describedby="accept-terms-error"
+                required
+              />
+              Accept Terms
+            </label>
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+      <section id="form-summary">
+        <h2>Summary</h2>
         <fieldset>
           <legend>
-            <p>Andet</p>
+            <article>
+              <p class="placeholder">Opsummering</p>
+            </article>
           </legend>
-          <label for="message">Besked</label>
-          <textarea name="message" id="message"></textarea>
-          <div class="form-group">
-            <div class="health">
-              <label for="upload">Tilføj billeder</label>
-            </div>
-            <input type="file" name="upload" id="upload" required />
+          <div class="input-summary">
+            <p>Vælg zoo: <span id="zoo_output"></span></p>
+            <p>Navn på flodhest: <span id="name_output"></span></p>
+            <p>Alder: <span id="age_output"></span></p>
+            <p>Vægt: <span id="weight_output"></span></p>
+            <p>Besked: <span id="message_output"></span></p>
+            <p>Terms accepted: <span id="terms_output"></span></p>
           </div>
         </fieldset>
-
-        <label for="terms">
-          <input type="checkbox" name="checkbox" id="terms" />
-          Accept Terms</label
-        >
-
-        <button>Submit</button>
-      </form>
+      </section>
     </main>
 
     <footer>
@@ -155,6 +202,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/forms.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

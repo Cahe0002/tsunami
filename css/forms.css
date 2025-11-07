@@ -2,7 +2,7 @@
   background-color: var(--form-background-color);
 }
 
-#form-section,
+/* #form-section,
 #form-summary {
   background-color: var(--info-background-color);
   padding: 0;
@@ -37,6 +37,18 @@
    input (border, border-radius, padding, evt. box-shadow),
    button (background-color, color, border, border-radius, padding, cursor)
    .error-message (color) */
+
+#form-summary {
+  display: grid;
+  gap: 1rlh;
+  align-content: start;
+}
+
+.input-summary p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
 
 #form-number {
   display: flex;
@@ -122,7 +134,6 @@ legend {
 fieldset {
   border: 1.5px solid #8188a1;
   padding: 10px 0px 10px 10px;
-  margin: 10px;
 }
 
 #zoo_name {
@@ -151,6 +162,16 @@ fieldset {
   font-size: 1rem;
 }
 
+.health {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+}
+
 #slider {
   width: 500px;
   height: max-content;
@@ -170,8 +191,8 @@ fieldset {
 #slider::-webkit-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
-  margin-top: -32px;
-  height: 40px;
+  margin-top: -30px;
+  height: 38px;
   width: 10px;
   background-color: #a61414;
 }
