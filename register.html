@@ -49,7 +49,7 @@
           <h2>Indberet jeres flodhest</h2>
           <p>Info om jeres flodhest</p>
         </article>
-        <form>
+        <form aria-label="Indberet flodhest">
           <fieldset>
             <legend>Vælg zoo</legend>
             <div class="form-group">
@@ -68,6 +68,7 @@
             <div class="form-group">
               <label for="name">Navn på flodhest</label>
               <input
+                aria-describedby="full-name-error"
                 type="text"
                 name="full-name"
                 id="full-name"
@@ -86,6 +87,7 @@
                   type="number"
                   name="age-number"
                   id="age-number"
+                  aria-describedby="number-error"
                   required
                 />
                 <p class="error-message">Please enter a value</p>
@@ -94,6 +96,8 @@
                   type="number"
                   name="total-weight"
                   id="total-weight"
+                  maxlength="2"
+                  aria-describedby="total-weight-error"
                   required
                 />
                 <p class="error-message">Please enter a value</p>
@@ -108,7 +112,12 @@
                 <span>Sund</span>
                 <span>Usund</span>
               </div>
-              <input type="range" name="health" id="slider" />
+              <input
+                type="range"
+                name="health"
+                id="slider"
+                aria-describedby="slider-error"
+              />
             </div>
           </fieldset>
 
@@ -120,7 +129,13 @@
               <div class="upload">
                 <label for="upload">Tilføj billeder</label>
               </div>
-              <input type="file" name="upload" id="upload" value="yes" />
+              <input
+                type="file"
+                name="upload"
+                id="upload"
+                value="yes"
+                aria-describedby="upload-error"
+              />
             </div>
           </fieldset>
 
@@ -131,6 +146,7 @@
                 name="accept_terms"
                 id="terms"
                 value="yes"
+                aria-describedby="accept-terms-error"
                 required
               />
               Accept Terms
@@ -148,6 +164,7 @@
             </article>
           </legend>
           <div class="input-summary">
+            <p>Vælg zoo: <span id="zoo_output"></span></p>
             <p>Navn på flodhest: <span id="name_output"></span></p>
             <p>Alder: <span id="age_output"></span></p>
             <p>Vægt: <span id="weight_output"></span></p>

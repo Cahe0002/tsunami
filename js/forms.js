@@ -4,6 +4,7 @@ const agenumber = document.querySelector("age-number");
 const totalweight = document.querySelector("total-weight");
 const message = document.querySelector("message");
 const terms = document.querySelector("accept_terms");
+const københavn = document.querySelector("København");
 
 const nameOutput = document.querySelector("#name_output");
 const ageOutput = document.querySelector("#age_output");
@@ -25,6 +26,7 @@ function handleSubmit(event) {
   const totalweight = formData.get("total-weight");
   const message = formData.get("message");
   const terms = formData.get("accept_terms");
+  const københavn = formData.get("København");
 
   nameOutput.textContent = firstname;
   ageOutput.textContent = agenumber;
