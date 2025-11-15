@@ -41,7 +41,7 @@
   --color-cta-card-bg: #a61414;
   /* news-cards */
   --color-news-bg: #ffffff;
-  --color-news-bg-inverted: #ffffff;
+  --color-news-bg-inverted: #8188a1;
   --color-cta-newscard-bg: #a61414;
   --color-cta-newscard-bg-inverted: #a61414;
 
@@ -64,6 +64,6 @@
 
   /* Infographics */
   --color-info-bg: #ffffff;
-  --color-infobox-1-bg: #ffffff;
+  --color-infobox-1-bg: #8188a1;
   --color-infobox-2-bg: #ffffff;
 }
