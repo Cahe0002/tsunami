@@ -23,6 +23,7 @@
 console.log("Test1");
 
 document.querySelector("#mund").addEventListener("click", sundb);
+var myImage = document.querySelector("#info-img");
 
 function sundb() {
   console.log("test 1");
@@ -30,8 +31,11 @@ function sundb() {
 
   document.querySelector(".info-text h2").textContent = "Sundhed";
   document.querySelector(".info-text p").textContent =
-    "Balancér vægt, energi og smidighed";
+    "Balancér vægt, energi og smidighed – flodhesten skal ikke blive for tung.";
+  myImage.src = "vegetables.png";
 }
+
+// Select the button
 
 // document.querySelector(".info-text").innerHTML = "hej";
 
@@ -51,6 +55,7 @@ function maveb() {
   document.querySelector(".info-text h2").textContent = "Tsunami";
   document.querySelector(".info-text p").textContent =
     "Strategisk brug af flodhestens styrke for at stoppe bølgen.";
+  myImage.src = "hippo_weight.png";
 }
 
 // Ben knappen \\
@@ -66,6 +71,7 @@ function vaegtb() {
   document.querySelector(".info-text h2").textContent = "Vægt";
   document.querySelector(".info-text p").textContent =
     "Byg styrke og muskelmasse hurtigt, så flodhesten kan modstå tsunamien.";
+  myImage.src = "Hippo_tsunami.png";
 }
 
 // document.querySelector("#mund").addEventListener("click", sundb);

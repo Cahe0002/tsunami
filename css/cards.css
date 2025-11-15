@@ -59,7 +59,7 @@
   font-weight: var(--font-weight-medium);
   text-align: center;
   line-height: 1rem;
-  padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 0;
+  padding: calc(2.1rem / 1.5) 0 calc(2.1rem / 2) 0;
 }
 .news_card:first-child {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -79,6 +79,8 @@
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
@@ -90,4 +92,30 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+}
+
+[popover]:popover-open {
+  display: grid;
+  margin: 0 auto;
+  align-self: center;
+  padding: 40px;
+  border-radius: 37px;
+  border-color: white;
+}
+
+.articlep {
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
