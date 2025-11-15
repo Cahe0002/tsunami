@@ -48,17 +48,15 @@
 
 #sund,
 #vaegt,
-#tsunami,
-.info-box {
+#tsunami {
   opacity: 0;
   transition: opacity 1s ease;
   display: none;
 }
 #sund.visible,
 #vaegt.visible,
-#tsunami.visible,
-.info-text {
-  display: block; /* Make it invisible, but still in layout */
+#tsunami.visible {
+  display: block;
   opacity: 1;
 }
 
