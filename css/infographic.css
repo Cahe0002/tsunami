@@ -60,6 +60,11 @@
   opacity: 1;
 }
 
+#info-img {
+  max-width: 334px;
+  margin: 0 clamp(1rem, 10%, 7rem);
+}
+
 /* .rotate {
   transform: scale(1);
 } */
