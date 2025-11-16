@@ -52,7 +52,7 @@ footer ul {
   display: grid;
 }
 #daily {
-  grid-template-rows: repeat(2, minmax(200px, min-content));
+  grid-template-rows: repeat(3, minmax(200px, min-content));
   gap: 1rem;
 }
 #breaking {
