@@ -10,9 +10,9 @@ btn.addEventListener("click", toggleTheme);
 if (localStorage.getItem("theme") === "dark") {
   html.classList.add("dark");
   btn.classList.add("active");
-  btn.textContent = "Darkmode ON";
-} else {
   btn.textContent = "Darkmode OFF";
+} else {
+  btn.textContent = "Darkmode ON";
 }
 
 function toggleTheme() {
@@ -21,9 +21,9 @@ function toggleTheme() {
 
   if (html.classList.contains("dark")) {
     localStorage.setItem("theme", "dark");
-    btn.textContent = "Darkmode ON";
+    btn.textContent = "Darkmode OFF";
   } else {
     localStorage.setItem("theme", "light");
-    btn.textContent = "Darkmode OFF";
+    btn.textContent = "Darkmode ON";
   }
 }

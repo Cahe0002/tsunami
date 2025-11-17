@@ -34,7 +34,7 @@ main section {
   border-radius: var(--border-radius);
 }
 
-button#mund,
+#mund,
 #mave,
 #ben {
   padding: 10px 50px 10px 50px;
@@ -47,11 +47,34 @@ button#mund,
   cursor: pointer;
 }
 
+#submit {
+  display: grid;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto;
+  font-family: "Orbitron", sans-serif;
+  padding: 10px 200px 10px 200px;
+  background-color: #a61414;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+}
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
+}
+
+button#toggle {
+  display: grid;
+  width: 50px;
+  padding: 2px 100px 2px 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font: 12px;
 }
 
 h1 {

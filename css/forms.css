@@ -112,19 +112,6 @@ input[type="checkbox"] {
   font-family: "Alegreya Sans", sans-serif;
 }
 
-button {
-  display: grid;
-  gap: 10px;
-  width: 500px;
-  margin: 0 auto;
-  font-family: "Orbitron", sans-serif;
-  padding: 10px 200px 10px 200px;
-  background-color: #a61414;
-  color: white;
-  font-family: "Orbitron", sans-serif;
-  cursor: pointer;
-}
-
 legend {
   padding: 10px 10px 10px 10px;
   font-family: "Alegreya Sans", sans-serif;
