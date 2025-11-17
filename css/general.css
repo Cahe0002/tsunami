@@ -1,7 +1,12 @@
 html {
+  color-scheme: light;
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 header {
@@ -27,6 +32,26 @@ header {
 main section {
   padding: 20px;
   border-radius: var(--border-radius);
+}
+
+button#mund,
+#mave,
+#ben {
+  padding: 10px 50px 10px 50px;
+  color: white;
+  background-color: #a61414;
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {

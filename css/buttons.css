@@ -15,3 +15,16 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+#togglebtn {
+  border: none;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid currentColor;
+  text-box: cap alphabetic;
+  padding: 1cap;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  margin-block: 1.5rlh;
+}

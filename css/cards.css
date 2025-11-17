@@ -2,7 +2,7 @@
   background-color: var(--color-card-bg);
   display: grid;
   grid-template-columns: 3fr 5fr;
-  gap: 10px;
+  gap: 20px;
   padding: 40px 0 40px 20px;
   border-radius: var(--border-radius);
   height: minmax(200px, min-content);
