@@ -72,7 +72,7 @@ form {
 }
 
 option {
-  background-color: #ffffff;
+  background-color: light-dark(#ffffff, #272727);
 }
 
 label {
@@ -80,6 +80,7 @@ label {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 5px;
+
   font-family: "Orbitron", sans-serif;
 }
 
@@ -87,7 +88,7 @@ input {
   display: grid;
   border: 1px solid #8188a1;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: light-dark(#ffffff, #272727);
   width: 500px;
   padding: 10px 0px 10px 10px;
   margin: 0 auto;
@@ -140,7 +141,7 @@ fieldset {
   display: grid;
   border: 1px solid #8188a1;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: light-dark(#ffffff, #272727);
   width: 500px;
   padding: 10px 0px 10px 10px;
   margin: 0 auto;
@@ -186,7 +187,7 @@ fieldset {
 
 #upload {
   appearance: none;
-  background-color: white;
+  background-color: light-dark(#ffffff, #272727);
   -webkit-appearance: none;
 }
 

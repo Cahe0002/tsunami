@@ -67,14 +67,22 @@ main section {
   justify-content: center;
 }
 
-button#toggle {
-  display: grid;
-  width: 50px;
-  padding: 2px 100px 2px 100px;
-  text-align: center;
+#toggle {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font: 12px;
+  padding: 0.5rem 1rem;
+  border-radius: 37px;
+  font-size: 0.8rem;
+  width: auto;
+  max-width: 150px;
+  background-color: #a61414;
+  cursor: pointer;
+  margin-left: 250px;
+}
+
+svg {
+  margin-bottom: 16px;
 }
 
 h1 {
