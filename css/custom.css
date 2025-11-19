@@ -14,8 +14,8 @@
   --color-menu-bg: #8188a1;
   /* Links */
   --color-link-bg: light-dark(#e6e7ec, #272727);
-  --color-link-hover: #a61414; /* used */
-  --color-link-active: #a61414; /* used */
+  --color-link-hover: light-dark (#000, #272727); /* used */
+  --color-link-active: light-dark (#000, #272727); /* used */
   --border-radius-links: 37px;
 
   /* Headlines og rubrik */

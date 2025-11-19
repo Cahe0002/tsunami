@@ -78,7 +78,7 @@ main section {
   max-width: 150px;
   background-color: #a61414;
   cursor: pointer;
-  margin-left: 250px;
+  margin-left: 410px;
 }
 
 svg {
@@ -160,6 +160,14 @@ nav a {
   font-weight: var(--font-weight-medium);
   width: max-content;
   margin-left: 1rem;
+}
+
+#logo {
+  max-height: 3.4rem;
+  max-width: 3.4rem;
+  align-content: center;
+  justify-self: center;
+  margin-top: 15px;
 }
 
 /* Global menu */
