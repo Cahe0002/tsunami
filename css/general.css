@@ -81,10 +81,6 @@ main section {
   margin-left: 410px;
 }
 
-svg {
-  margin-bottom: 16px;
-}
-
 h1 {
   font-size: var(--font-h1-size);
   font-weight: var(--font-weight-bold);
@@ -167,7 +163,6 @@ nav a {
   max-width: 3.4rem;
   align-content: center;
   justify-self: center;
-  margin-top: 15px;
 }
 
 /* Global menu */
