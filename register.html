@@ -21,14 +21,16 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="icon" type="image/png" href="img/hippo_logo_fav.png" />
     <title>Emergency Site</title>
   </head>
   <body id="register">
     <header>
+      <ul></ul>
       <nav>
         <div id="logotype-wrapper" class="logo">
           <a href="index.html"> LOGO-TYPE </a>
+          <button id="toggle">Dark mode</button>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -68,10 +70,10 @@
             <div class="form-group">
               <label for="name">Navn på flodhest</label>
               <input
-                aria-describedby="full-name-error"
                 type="text"
                 name="full-name"
                 id="full-name"
+                aria-describedby="full-name-error"
                 required
                 title="Please enter your name"
               />
@@ -152,7 +154,7 @@
               Accept Terms
             </label>
           </div>
-          <button>Submit</button>
+          <button id="submit">Submit</button>
         </form>
       </section>
       <section id="form-summary">
@@ -203,6 +205,7 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/forms.js"></script>
+    <script src="js/darkmode.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

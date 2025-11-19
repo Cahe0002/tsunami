@@ -61,4 +61,8 @@
   nav.active .menu a {
     font-size: 24px;
   }
+
+  #toggle {
+    display: none;
+  }
 }
