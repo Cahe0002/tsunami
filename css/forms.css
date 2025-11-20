@@ -80,7 +80,6 @@ label {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 5px;
-
   font-family: "Orbitron", sans-serif;
 }
 
@@ -102,7 +101,7 @@ input[type="checkbox"] {
   width: auto; /* don’t force full width */
   margin: -0.1rem 0.1rem 0 0; /* space between checkbox and label */
   vertical-align: middle; /* aligns with text nicely */
-  accent-color: #8188a1; /* optional: match your theme */
+  accent-color: light-dark(#8188a1, #272727); /* optional: match your theme */
 }
 
 .error-message {
