@@ -94,6 +94,24 @@
   margin-left: 1rem;
 }
 
+/* Fjern eksisterende pil */
+
+summary::marker {
+  content: none;
+}
+
+summary::after {
+  content: "+";
+}
+
+[open] summary::after {
+  content: "-";
+}
+
+.detail {
+  margin-top: 20px;
+}
+
 [popover] {
   max-height: 90vh;
   max-width: 50ch;

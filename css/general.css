@@ -44,6 +44,7 @@ main section {
   font-size: 20px;
   font-style: normal;
   margin: 10px;
+  margin-top: 38px;
   cursor: pointer;
 }
 
@@ -77,6 +78,7 @@ main section {
   width: auto;
   max-width: 150px;
   background-color: #a61414;
+  color: #e6e7ec;
   cursor: pointer;
   margin-left: 410px;
 }

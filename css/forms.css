@@ -120,7 +120,7 @@ legend {
 }
 
 fieldset {
-  border: 1.5px solid #8188a1;
+  border: 1.5px solid light-dark(#8188a1, #272727);
   padding: 10px 0px 10px 10px;
 }
 
@@ -130,7 +130,7 @@ fieldset {
   width: 500px;
   margin: 0 auto;
   margin-bottom: 25px;
-  background-color: #8188a1;
+  background-color: light-dark(#8188a1, #272727);
   color: #e6e7ec;
   border-radius: 0px;
   font-family: "Orbitron", sans-serif;
@@ -172,7 +172,7 @@ fieldset {
 }
 
 #slider::-webkit-slider-runnable-track {
-  background-color: #8188a1;
+  background-color: light-dark(#8188a1, #272727);
   height: 8px;
 }
 
