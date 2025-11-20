@@ -167,6 +167,10 @@ nav a {
   justify-self: center;
 }
 
+svg .st0 {
+  fill: light-dark(#8188a1, #e6e7ec);
+}
+
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
