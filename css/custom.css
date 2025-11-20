@@ -36,6 +36,10 @@
   /* Borders */
   --border-radius: 37px;
 
+  /* SVG */
+
+  --color-svg: light-dark(#8188a1, #e6e7ec);
+
   /* Cards */
   --color-card-bg: light-dark(#ffff, #272727);
   --color-cta-card-bg: #a61414;
@@ -66,4 +70,7 @@
   --color-info-bg: light-dark(#ffffff, #272727);
   --color-infobox-1-bg: #8188a1;
   --color-infobox-2-bg: #ffffff;
+
+  /* Footer */
+  --color-footer: #a61414;
 }

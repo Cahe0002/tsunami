@@ -168,7 +168,7 @@ nav a {
 }
 
 svg .st0 {
-  fill: light-dark(#8188a1, #e6e7ec);
+  fill: var(--color-svg);
 }
 
 /* Global menu */
@@ -198,4 +198,8 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+footer {
+  background-color: var(--color-footer);
 }
