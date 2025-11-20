@@ -89,21 +89,21 @@
           <fieldset>
             <legend>Personlige oplysninger</legend>
             <div class="form-group">
-              <label for="name">Navn på flodhest</label>
+              <label for="full-name">Navn på flodhest</label>
               <input
                 type="text"
                 name="full-name"
                 id="full-name"
                 aria-describedby="full-name-error"
-                required
                 title="Please enter your name"
+                required
               />
               <p class="error-message">Please enter a value</p>
             </div>
             <div class="form-group">
               <div class="form-number">
-                <label for="age">Alder på flodhest (år)</label>
-                <label for="weight">Vægt på flodhest (kg)</label>
+                <label for="age-number">Alder på flodhest (år)</label>
+                <label for="total-weight">Vægt på flodhest (kg)</label>
               </div>
               <div id="form-number">
                 <input
@@ -114,7 +114,6 @@
                   required
                 />
                 <p class="error-message">Please enter a value</p>
-
                 <input
                   type="number"
                   name="total-weight"
@@ -137,7 +136,7 @@
               </div>
               <input
                 type="range"
-                name="health"
+                name="slider"
                 id="slider"
                 aria-describedby="slider-error"
               />
@@ -193,6 +192,7 @@
             <p>Vægt: <span id="weight_output"></span></p>
             <p>Besked: <span id="message_output"></span></p>
             <p>Terms accepted: <span id="terms_output"></span></p>
+            <p>Helbred: <span id="slider_output"></span> % Sund/Usund</p>
           </div>
         </fieldset>
       </section>

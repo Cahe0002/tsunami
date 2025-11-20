@@ -5,6 +5,7 @@ const totalweight = document.querySelector("total-weight");
 const message = document.querySelector("message");
 const terms = document.querySelector("accept_terms");
 const zoo = document.querySelector("zoo");
+const slider = document.querySelector("slider");
 
 const nameOutput = document.querySelector("#name_output");
 const ageOutput = document.querySelector("#age_output");
@@ -12,6 +13,7 @@ const weightOutput = document.querySelector("#weight_output");
 const messageOutput = document.querySelector("#message_output");
 const termsOutput = document.querySelector("#terms_output");
 const zooOutput = document.querySelector("#zoo_output");
+const sliderOutput = document.querySelector("#slider_output");
 
 function cancelPopup(event) {
   event.preventDefault();
@@ -28,6 +30,7 @@ function handleSubmit(event) {
   const message = formData.get("message");
   const terms = formData.get("accept_terms");
   const zoo = formData.get("zoo");
+  const slider = formData.get("slider");
 
   nameOutput.textContent = firstname;
   ageOutput.textContent = agenumber;
@@ -35,6 +38,9 @@ function handleSubmit(event) {
   messageOutput.textContent = message;
   termsOutput.textContent = terms;
   zooOutput.textContent = zoo;
+
+  sliderOutput.textContent = slider;
+  console.log(slider);
 
   form.reset();
 }
