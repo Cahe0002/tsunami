@@ -14,8 +14,8 @@
   --color-menu-bg: #8188a1;
   /* Links */
   --color-link-bg: light-dark(#e6e7ec, #272727);
-  --color-link-hover: light-dark (#000, #272727); /* used */
-  --color-link-active: light-dark (#000, #272727); /* used */
+  --color-link-hover: #a61414; /* used */
+  --color-link-active: #a61414; /* used */
   --border-radius-links: 37px;
 
   /* Headlines og rubrik */
@@ -43,7 +43,7 @@
   --color-news-bg: light-dark(#ffffff, #494949);
   --color-news-bg-inverted: light-dark(#8188a1, #272727);
   --color-cta-newscard-bg: #a61414;
-  --color-cta-newscard-bg-inverted: #a61414;
+  --color-cta-newscard-bg-inverted: light-dark(#e6e7ec, #a61414);
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;

@@ -80,7 +80,6 @@ label {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 5px;
-
   font-family: "Orbitron", sans-serif;
 }
 
@@ -102,7 +101,7 @@ input[type="checkbox"] {
   width: auto; /* don’t force full width */
   margin: -0.1rem 0.1rem 0 0; /* space between checkbox and label */
   vertical-align: middle; /* aligns with text nicely */
-  accent-color: #8188a1; /* optional: match your theme */
+  accent-color: light-dark(#8188a1, #272727); /* optional: match your theme */
 }
 
 .error-message {
@@ -120,7 +119,7 @@ legend {
 }
 
 fieldset {
-  border: 1.5px solid #8188a1;
+  border: 1.5px solid light-dark(#8188a1, #272727);
   padding: 10px 0px 10px 10px;
 }
 
@@ -130,7 +129,7 @@ fieldset {
   width: 500px;
   margin: 0 auto;
   margin-bottom: 25px;
-  background-color: #8188a1;
+  background-color: light-dark(#8188a1, #272727);
   color: #e6e7ec;
   border-radius: 0px;
   font-family: "Orbitron", sans-serif;
@@ -172,7 +171,7 @@ fieldset {
 }
 
 #slider::-webkit-slider-runnable-track {
-  background-color: #8188a1;
+  background-color: light-dark(#8188a1, #272727);
   height: 8px;
 }
 
